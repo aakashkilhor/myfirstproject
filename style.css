@@ -16,7 +16,8 @@ body{
 /* ---------- NAVBAR ------------ */
 /* ------------------------------ */
 .logo{
-  position: absolute;
+  /* position: absolute; */
+  margin-top: 40px;
   top: 60px;
   left: 60px;
 }
@@ -24,16 +25,18 @@ body{
 /* ---------- HERO ------------ */
 /* ------------------------------ */
 
+.hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .bottom{
-  position: absolute;
-  bottom: 50px;
-  right: 100px;
-  scale: .7;
+  align-self: flex-end;
+  margin-left: 20px;
 }
 h1{
-  display: flex;
-  justify-content: center;
-  margin-left: 15%;
+  margin-top: 60px;
   font-size: 80px;
   text-align: center;
   width: 800px;
@@ -46,30 +49,44 @@ h1{
   justify-content: center;
 }
 .list-item{
-  margin: 50px;
+  margin: 30px 20px 0px 20px;
   color: orange;
 
 }
 .navbar{
   display: flex;
+  /* flex-grow: 1; */
   flex-direction: row;
-  margin-left: 300px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
 }
 .button-large{
   color: #fff;
   background-color: #ff505f;
-  padding: 10px 35px;
+  padding: 10px 20px;
   border: none;
   margin-top: 40px;
-  margin-left: 550px;
-  font-size: 30px;
+  font-size: 20px;
 }
 .button-small{
   color: #fff;
-  margin-top: 60px;
+  margin-top: 30px;
   background-color: #ff505f;
   padding: 10px 30px  ;
   border: none;
-  justify-content: flex-start;
-  margin-left: 200px;
+  /* align-self: flex-start; */
+  margin-right: 20px;
+}
+
+@media (max-width:720px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  h1{
+    font-size: 40px;
+    width: 80vw;
+  }
 }
