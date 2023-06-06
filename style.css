@@ -10,6 +10,7 @@ body{
   background-color:#1A1E30;
   background-blend-mode: soft-light;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* ------------------------------ */
@@ -32,6 +33,7 @@ body{
 }
 
 .bottom{
+  margin-top: 80px;
   align-self: flex-end;
   margin-left: 20px;
 }
